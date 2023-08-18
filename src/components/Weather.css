@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+body {
+    margin:0;
+    background-image: url('https://m-cdn.phonearena.com/images/article/143515-wide-two_1200/Apple-tests-adding-news-to-the-native-Weather-app-in-iOS-16.2-Beta.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.weather--container {
+    margin-top: 5%;
+    margin-left: 15%;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:70%;
+    height: 550px;
+    border-radius: 20px;
+    font-family: 'Recursive', sans-serif;
+    color: white;
+}
+
+.weather--header {
+    background-color: #424242;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.weather--basic--info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.day {
+    padding-left: 10px;
+}
+
+.temp {
+    padding-right: 10px;
+}
+
+.detailed--weather--info {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows with equal height */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 10px; /* Gap between grid items */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.left--grid--item {
+    padding-left: 10px;
+    grid-column: 1; /* First column */
+    text-align: left;
+}
+
+.right--grid--item {
+    padding-right: 10px;
+    grid-column: 2; /* Second column */
+    text-align: right;
+}
+
+.future--forcast {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin:auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 12%;
+    
+}
